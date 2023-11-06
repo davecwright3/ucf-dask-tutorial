@@ -4,7 +4,7 @@
 module load anaconda/anaconda3
 
 # initialize shell and source modified shell config
-conda init bash
+conda init --user bash
 source ~/.bashrc
 
 # prepend the directory that contains the shared conda environment
