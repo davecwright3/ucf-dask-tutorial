@@ -11,5 +11,4 @@ source ~/.bashrc
 conda config --prepend envs_dirs '/groups/course.workshop/shared-conda-envs/'
 
 # activate the environment and create a jupyter password
-conda activate dask-tutorial
-jupyter notebook password
+conda run -n dask-tutorial jupyter notebook password
