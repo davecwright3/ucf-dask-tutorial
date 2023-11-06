@@ -8,7 +8,7 @@ conda init bash
 source ~/.bashrc
 
 # prepend the directory that contains the shared conda environment
-conda config --prepend envs_dirs '/groups.course.workshop/shared-conda-envs/'
+conda config --prepend envs_dirs '/groups/course.workshop/shared-conda-envs/'
 
 # activate the environment and create a jupyter password
 conda activate dask-tutorial
