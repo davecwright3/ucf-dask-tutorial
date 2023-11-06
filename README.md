@@ -23,13 +23,18 @@ There are many different ways to achieve this, but for this tutorial we will use
 
 ### 2) Setup software environment
 #### 2a) If working on ARCC
-Run the included script `setup-arcc-env.sh`
+Run the included script `setup-arcc-env.sh`.
 
 ``` sh
+# First, request some resources
+srun -n 1 --mem=4G --time=00:10:00 --pty bash
+
+# Resources will be allocated, and you will switch to a compute node
 ./setup-arcc-env.sh
 ```
+After this, `exit` and the job will end.
 
-This will
+This script will
 1. Load the conda module
 2. Initialize your shell with relevant conda functions and variables
 3. Make the pre-configured workshop conda environment available to you
