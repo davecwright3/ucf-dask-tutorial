@@ -1,0 +1,25 @@
+name: dask-tutorial
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - jupyterlab
+  - numpy
+  - scipy
+  - bokeh >=1.0.0,<3.3.0
+  - dask
+  - dask-labextension
+  - dask-jobqueue
+  - distributed
+  - matplotlib
+  - pandas
+  - pip
+  - python-graphviz
+  - ipycytoscape
+  - pyarrow
+  - s3fs
+  - zarr
+  - pooch
+  - xarray
+  - mamba
+
