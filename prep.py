@@ -33,11 +33,7 @@ def parse_args(args=None):
 
 
 if not os.path.exists(data_dir):
-    raise OSError(
-        "data/ directory not found, aborting data preparation. "
-        'Restore it with "git checkout data" from the base '
-        "directory."
-    )
+    os.mkdir(data_dir)
 
 
 def flights(small=None):
